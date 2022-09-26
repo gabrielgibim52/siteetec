@@ -106,5 +106,25 @@ footer{
     background-color: #800000;
     padding: 10px 60px;
     justify-content: space-between;
-    align-items: center;
+    text-align: center;
+}
+header{
+    text-align: center;
+    font-size: small;
+}
+form{
+    text-align: center;
+    color: white;
+}
+fieldset{
+    background-color: #800000;
+    border-radius: 40px;
+    font-size: larger;
+}
+legend{
+    color: black;
+    font-size: xx-large;
+}
+iframe{
+    text-align: left;
 }
