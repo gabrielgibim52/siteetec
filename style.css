@@ -107,6 +107,8 @@ footer{
     padding: 10px 60px;
     justify-content: space-between;
     text-align: center;
+    font-size: xx-large; 
+    color: white;
 }
 header{
     text-align: center;
@@ -119,7 +121,7 @@ form{
 fieldset{
     background-color: #800000;
     border-radius: 40px;
-    font-size: larger;
+    font-size: xx-large;
 }
 legend{
     color: black;
@@ -127,4 +129,117 @@ legend{
 }
 iframe{
     text-align: left;
+}
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; 
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; 
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  color: #333;
+  font-weight: 300;
+  line-height: 1.6; 
+}
+
+.container {
+  width: 60%;
+  margin: 2rem auto; 
+}
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap'); /* font-family: 'Architects Daughter', cursive;*/
+*body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #111;
+}
+
+img{
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    
+}
+
+.container{
+    width: 665px;
+}
+
+.card{
+    margin-left: 10px;
+    margin-top: 10px;
+    position: relative;
+    width: 150px;
+    height: 150px;
+    transform-style: preserve-3d;
+    display: inline-block;
+    transition-duration: 0.5s;
+    transition-duration: 0.5s;
+}
+
+.card .face{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backface-visibility: hidden;
+    transition: 0.5s ease-in-out;
+    transform: perspective(500px) rotateY(0deg);
+    border-radius: 10px;
+}
+
+.card:active .face.front{
+    transform: perspective(500px) rotateY(180deg);
+}
+
+.card .face.back{
+    border-radius: 10px;
+    background: #000000b7;
+    transform: perspective(500px) rotateY(180deg);
+}
+
+.card:active .face.back{
+    transform: perspective(500px) rotateY(360deg);
+}
+
+.card .face h2{
+    font-size: 1em;
+    color: #ffffffff;
+    text-transform: uppercase;
+    transform: perspective(500px) translateZ(50px);
+}
+
+.card:hover, .card:focus{
+    transform: scale(1.1);
+    transform: scale(1.1);
+    box-shadow: 1px 1px 2px 0.5px #494848;
+    border-radius: 10px;
+}
+
+h2{
+    font-family: 'Architects Daughter', cursive;
+    font-weight: 100;
+    font-size: 10pt;
+    text-align: center;
+}
+.curso{
+   border:5px solid black;
+   text-align: center;
+   background-color: #800000;
+   color: black;
 }
